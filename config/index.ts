@@ -24,6 +24,9 @@ const config = {
     type: 'webpack5',
     prebundle: { enable: false }
   },
+  alias: {
+    '@': require('path').resolve(__dirname, '..', 'src')
+  },
   mini: {
     postcss: {
       pxtransform: {

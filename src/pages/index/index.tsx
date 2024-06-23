@@ -3,6 +3,7 @@ import { View } from '@tarojs/components'
 import { Button } from "@nutui/nutui-react-taro"
 import './index.scss'
 import  { useLoad} from "@tarojs/taro";
+import Page from "@/components/Page";
 
 function Index() {
 
@@ -11,6 +12,7 @@ function Index() {
   })
 
   return (
+  <Page title={'test1'}>
     <View className="nutui-react-demo">
       <View className="index">
         欢迎使用 NutUI React 开发 Taro 多端项目。
@@ -21,6 +23,7 @@ function Index() {
         </Button>
       </View>
     </View>
+  </Page>
   )
 }
 
